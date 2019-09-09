@@ -38,7 +38,7 @@
           </div>
         </div>
         <h3>Apellidos</h3>
-        <h6>Apellido paterno y apellido materno</h6>
+        <h6>Ingrese apellido paterno y materno</h6>
         <div class="form-row">
           <div class="form-group col-md-6">
             <input type="text" class="form-control" placeholder="Apellido paterno">
@@ -49,43 +49,38 @@
         </div> 
         <div class="form-row">
           <div class="form-group col-md-6">
-            <h3>RUT</h3>
-            <h6>RUT sin puntos ni guión</h6>
-              <input type="text" class="inputs form-control" 
-              name="cliente" id="cliente" 
-              maxlength="12" onkeyup="formatCliente(this)" placeholder="20.254.365-4">
+            <h3>RUN</h3>
+            <h6>Digite su RUN sin puntos ni guión</h6>
+              <input type="text" class="inputs form-control" name="cliente" id="cliente" maxlength="12" onkeyup="formatCliente(this)" placeholder="20.254.365-4">
           </div>
           <div class="form-group col-md-6">
-            <h3>Nacido</h3>
-            <h6>Fecha de nacimiento</h6>
+            <h3>Fecha de nacimiento</h3>
+            <h6>dd/mm/aaaa</h6>
             <div class="input-group">
               <input type="date" class="form-control">
             </div>
           </div>
         </div>
-        <h3>Número</h3>
-        <h6>Contacto telefónico</h6>
+        <h3>Contacto</h3>
+        <h6>Ingrese número telefónico</h6>
         <div class="form-row">
           <div class="form-group col-md-4"> 
             <input type="tel" id="phone" class="form-control" placeholder="+56"> 
           </div>  
           <div class="form-group col-md-8"> 
-            <input type="text" class="form-control" placeholder="988776655">
+            <input type="text" class="form-control" placeholder="900009999">
           </div> 
         </div>
-        <button type="button" class="action-button previous_button ir-arriba">Back</button>
-        <button type="button" class="next action-button ir-arriba">Continue</button>  
+        <button type="button" class="action-button previous_button ir-arriba">Volver</button>
+        <button type="button" class="next action-button ir-arriba">Continuar</button>  
       </fieldset>
       <fieldset>
-
-
-
 
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <h3>Comuna</h3>
-            <h6>Comuna en que estudió</h6>
+            <h6>Ingrese comuna en que estudia o estudió</h6>
             <div class="input-group"> 
               <select class="product_select" name="cosa" onchange="cambia()">
                 <option value="0">Seleccione comuna</option>
@@ -102,8 +97,8 @@
 
 
           <div class="form-group col-md-6">
-            <h3>Establecimiento</h3>
-            <h6>Establecimiento educacional</h6>
+            <h3>Educación</h3>
+            <h6>Establecimiento educacional en la que estudia o estudió</h6>
             <div class="input-group"> 
               <select class="product_select" name="opt">
                 <option value="-">-</option>
@@ -114,21 +109,21 @@
         
         
         <h3>NEM</h3>
-        <h6>NEM promediado</h6>
+        <h6>Agregue NEM obtenido o un aproximado si aún cursa 4° medio</h6>
         <div class="input-group">
           <input type="text" class="form-control" placeholder="67" maxlength="2">
         </div>      
-        <button type="button" class="action-button previous previous_button ir-arriba">Back</button>
-        <button type="button" class="next action-button ir-arriba">Continue</button>  
+        <button type="button" class="action-button previous previous_button ir-arriba">Volver</button>
+        <button type="button" class="next action-button ir-arriba">Continuar</button>  
       </fieldset> 
       <fieldset>
         <div class="form-row">
           <div class="form-group col-md-6">
             <h3>Comuna</h3>
-            <h6>Comuna de residencia</h6>
+            <h6>Ingrese comuna en la que reside</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccionar</option> 
+                <option value="#">Seleccione comuna</option> 
                 <option value="#">Lota</option>
                 <option value="#">Coronel</option> 
                 <option value="#">prov. Arauco</option> 
@@ -137,10 +132,10 @@
           </div>
           <div class="form-group col-md-6">
             <h3>Sede</h3>
-            <h6>Sede que desea</h6>
+            <h6>Sede a la que desea postular</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccionar</option> 
+                <option value="#">Seleccione sede</option> 
                 <option value="#">Sede Lota</option>
                 <option value="#">Sede Cañete</option> 
               </select>
@@ -149,11 +144,11 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <h3>Opción 1</h3>
-            <h6>Primera carrera</h6>
+            <h3>Primera preferencia</h3>
+            <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccionar</option> 
+                <option value="#">Seleccione carrera</option> 
                 <option value="#">Computación e Informática</option>
                 <option value="#">Párvulo</option> 
                 <option value="#">Prevención de Riesgos</option> 
@@ -161,11 +156,11 @@
             </div>
           </div>
           <div class="form-group col-md-4">
-            <h3>Opción 2</h3>
-            <h6>Segunda carrera</h6>
+            <h3>Segunda preferencia</h3>
+            <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccionar</option> 
+                <option value="#">Seleccione carrera</option> 
                 <option value="#">Computación e Informática</option>
                 <option value="#">Párvulo</option> 
                 <option value="#">Prevención de Riesgos</option>
@@ -173,11 +168,11 @@
             </div>
           </div>
           <div class="form-group col-md-4">
-            <h3>Opción 3</h3>
-            <h6>Tercera carrera</h6>
+            <h3>Tercera preferencia</h3>
+            <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccionar</option> 
+                <option value="#">Seleccione carrera</option> 
                 <option value="#">Computación e Informática</option>
                 <option value="#">Párvulo</option> 
                 <option value="#">Prevención de Riesgos</option>
@@ -185,18 +180,18 @@
             </div>
           </div>
         </div>    
-        <button type="button" class="action-button previous previous_button ir-arriba">Back</button>
-        <button type="button" class="next action-button ir-arriba">Continue</button>  
+        <button type="button" class="action-button previous previous_button ir-arriba">Volver</button>
+        <button type="button" class="next action-button ir-arriba">Continuar</button>  
       </fieldset>  
       <fieldset>
-        <h3>Email</h3>
-        <h6>Email para verificación</h6>
+        <h3>E-mail</h3>
+        <h6>Ingrese su e-mail para su verificación</h6>
         <div class="form-group"> 
           <input type="email" class="form-control" placeholder="email@email.com"> 
         </div>
         <div class="done_text"> 
           <a href="#" class="don_icon"><i class="ion-android-done"></i></a> 
-          <h6>Se enviará un código secreto a su Email. <br>Por favor, ingréselo acá para continuar.</h6> 
+          <h6>Se enviará un código secreto a su e-mail. <br>Por favor, ingréselo aquí para continuar.</h6> 
         </div>  
         <div class="code_group"> 
           <input type="text" class="form-control" placeholder="0">
@@ -204,8 +199,8 @@
           <input type="text" class="form-control" placeholder="0">
           <input type="text" class="form-control" placeholder="0">
         </div> 
-        <button type="button" class="action-button previous previous_button ir-arriba">Back</button> 
-        <a href="#" class="action-button ir-arriba">Finish</a> 
+        <button type="button" class="action-button previous previous_button ir-arriba">Volver</button> 
+        <a href="#" class="action-button ir-arriba">Enviar</a> 
       </fieldset>   
     </form>  
   </section> 
