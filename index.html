@@ -14,9 +14,11 @@
   <section class="multi_step_form">  
     <form id="msform" name="formulario1" action="#"> 
       <!-- Tittle -->
-      <div class="tittle">
-        <b><span style="font-size: 100px; color: #f59f19;">CFT</span><span style="font-size: 100px; color: #225588;">Lota</span></b>
-        <p>Preselección CFT Lota Arauco</p>
+      <div class="titulo">
+        <b><span style="font-size: 100px; color: #0e3f70;">CFTLA</span>
+          <img src="./logo_azul2.png" border="0" alt="CFTLA.CL" title="CFTLA.CL">
+          <span style="font-size: 100px; color: #f59f19;">App</span></b>
+        <p>Proceso de admisión 2020 - CFT Lota Arauco</p>
       </div>
       <!-- progressbar -->
       <ul id="progressbar">
@@ -28,7 +30,6 @@
       <!-- fieldsets -->
       <fieldset>
         <h3>Nombres</h3>
-        <h6>Primer y segundo nombre</h6>
         <div class="form-row">
           <div class="form-group col-md-6" align="left">
             <input type="text" class="form-control" placeholder="Primer nombre">
@@ -38,7 +39,6 @@
           </div>
         </div>
         <h3>Apellidos</h3>
-        <h6>Ingrese apellido paterno y materno</h6>
         <div class="form-row">
           <div class="form-group col-md-6">
             <input type="text" class="form-control" placeholder="Apellido paterno">
@@ -55,14 +55,12 @@
           </div>
           <div class="form-group col-md-6">
             <h3>Fecha de nacimiento</h3>
-            <h6>Ingrese datos según el formato indicado</h6>
             <div class="input-group">
               <input type="date" class="form-control">
             </div>
           </div>
         </div>
-        <h3>Contacto</h3>
-        <h6>Ingrese número telefónico</h6>
+        <h3>Contacton telefónico</h3>
         <div class="form-row">
           <div class="form-group col-md-4"> 
             <input type="tel" id="phone" class="form-control" placeholder="+56"> 
@@ -80,17 +78,19 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <h3>Comuna</h3>
-            <h6>Ingrese comuna en que estudia o estudió</h6>
+            <h6>Ingrese comuna que estudia o estudió</h6>
             <div class="input-group"> 
-              <select class="product_select" name="cosa" onchange="cambia()">
+              <select class="product_select" name="comuna" onchange="cambia()">
                 <option value="0">Seleccione comuna</option>
                 <option value="1">Coronel</option>
                 <option value="2">Lota</option>
-                <option value="3">Cañete</option>
-                <option value="4">Curanilahue</option>
-                <option value="5">Lebu</option>
-                <option value="6">Los Álamos</option>
-                <option value="7">Tirúa</option>
+                <option value="3">Arauco</option>
+                <option value="4">Cañete</option>
+                <option value="5">Curanilahue</option>
+                <option value="6">Lebu</option>
+                <option value="7">Los Álamos</option>
+                <option value="8">Tirúa</option>
+                <option value="9">Contulmo</option>
               </select>
             </div>
           </div>
@@ -123,10 +123,16 @@
             <h6>Ingrese comuna en la que reside</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccione comuna</option> 
+                <option value="#">Seleccione comuna</option>
+                <option value="#">Coronel</option>
                 <option value="#">Lota</option>
-                <option value="#">Coronel</option> 
-                <option value="#">prov. Arauco</option> 
+                <option value="#">Arauco</option>
+                <option value="#">Cañete</option>
+                <option value="#">Curanilahue</option>
+                <option value="#">Lebu</option>
+                <option value="#">Los Álamos</option>
+                <option value="#">Tirúa</option>
+                <option value="#">Contulmo</option> 
               </select>
             </div>
           </div>
@@ -148,10 +154,18 @@
             <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccione carrera</option> 
-                <option value="#">Computación e Informática</option>
-                <option value="#">Párvulo</option> 
-                <option value="#">Prevención de Riesgos</option> 
+                <option value="0">Seleccione carrera</option>
+                <option value="#">TNS en computación e informática</option>
+                <option value="#">TNS en gestión turística</option>
+                <option value="#">TNS en construcción</option>
+                <option value="#">TNS en administración de empresas</option>
+                <option value="#">TNS en instrumentación y automatización industrial</option>
+                <option value="#">TNS en gestión portuaria y pesquera</option>
+                <option value="#">TNS en refrigeración industrial y climatización</option>
+                <option value="#">TNS en administración pública</option>
+                <option value="#">TNS en educación de párvulos</option>
+                <option value="#">TNS en prevención de riesgos</option>
+                <option value="#">TNS en mecánica industrial</option>
               </select>
             </div>
           </div>
@@ -160,10 +174,18 @@
             <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccione carrera</option> 
-                <option value="#">Computación e Informática</option>
-                <option value="#">Párvulo</option> 
-                <option value="#">Prevención de Riesgos</option>
+                <option value="0">Seleccione carrera</option>
+                <option value="#">TNS en computación e informática</option>
+                <option value="#">TNS en gestión turística</option>
+                <option value="#">TNS en construcción</option>
+                <option value="#">TNS en administración de empresas</option>
+                <option value="#">TNS en instrumentación y automatización industrial</option>
+                <option value="#">TNS en gestión portuaria y pesquera</option>
+                <option value="#">TNS en refrigeración industrial y climatización</option>
+                <option value="#">TNS en administración pública</option>
+                <option value="#">TNS en educación de párvulos</option>
+                <option value="#">TNS en prevención de riesgos</option>
+                <option value="#">TNS en mecánica industrial</option>
               </select>
             </div>
           </div>
@@ -172,10 +194,18 @@
             <h6>Ingrese carrera</h6>
             <div class="input-group"> 
               <select class="product_select">
-                <option value="#">Seleccione carrera</option> 
-                <option value="#">Computación e Informática</option>
-                <option value="#">Párvulo</option> 
-                <option value="#">Prevención de Riesgos</option>
+                <option value="0">Seleccione carrera</option>
+                <option value="#">TNS en computación e informática</option>
+                <option value="#">TNS en gestión turística</option>
+                <option value="#">TNS en construcción</option>
+                <option value="#">TNS en administración de empresas</option>
+                <option value="#">TNS en instrumentación y automatización industrial</option>
+                <option value="#">TNS en gestión portuaria y pesquera</option>
+                <option value="#">TNS en refrigeración industrial y climatización</option>
+                <option value="#">TNS en administración pública</option>
+                <option value="#">TNS en educación de párvulos</option>
+                <option value="#">TNS en prevención de riesgos</option>
+                <option value="#">TNS en mecánica industrial</option>
               </select>
             </div>
           </div>
